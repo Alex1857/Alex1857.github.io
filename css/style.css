@@ -1,0 +1,188 @@
+                      /* Enlever style, justifier le texte et mettre le box-sizing  */
+                      
+                      * {
+                          box-sizing: border-box;
+                          text-decoration: none;
+                          text-align: justify;
+                      }
+                      /* Met couleur de background et enleve marges */
+                      
+                      body {
+                          margin: 0;
+                          background-color: white;
+                      }
+                      /* rendre mon contenu relatif par rapport a mon nav */
+                      
+                      html {
+                          position: relative;
+                          min-height: 100%;
+                      }
+                      /* disposition de mon menu (menu et bar en dessous) */
+                      
+                      nav {
+                          display: flex;
+                          justify-content: flex-start;
+                          flex-direction: column;
+                          background-color: black;
+                          width: 100%;
+                          position: sticky;
+                          top: 0px;
+                          z-index: 1;
+                      }
+                      /* padding et bordure de la liste de la nav */
+                      
+                      nav li {
+                          padding: 0.2em 0.6em 0.4em 0.6em;
+                          border-radius: 10px;
+                      }
+                      /* couleur et font-size des items de la nav */
+                      
+                      nav li a {
+                          font-size: 1.5em;
+                          color: white;
+                      }
+                      /* hover sur les items de la nav */
+                      
+                      nav li a:hover {
+                          color: rgb(214, 220, 224);
+                      }
+                      /* Couleur quand sur la page */
+                      
+                      .active {
+                          color: red;
+                      }
+                      /* liste de la nav (disposer en rangée et ent space-around) */
+                      
+                      .ul1 {
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: space-around;
+                          list-style-type: none;
+                          white-space: nowrap;
+                      }
+                      /* titre alexinfo.ca (ses marges et couleurs) */
+                      
+                      .titrealexinfo {
+                          background-color: red;
+                          margin-left: -4%;
+                          margin-right: 0.6em;
+                      }
+                      /* Sous Bar de la nav (couleur degrader et disposition des marges) */
+                      
+                      .underbar {
+                          margin-top: -0.2em;
+                          height: 1.2em;
+                          background-image: linear-gradient(white, black);
+                      }
+                      /* footer (disposer en rangée avec une position aboslue en bas */
+                      
+                      footer {
+                          display: flex;
+                          flex-direction: row;
+                          height: 160px;
+                          width: 100%;
+                          position: absolute;
+                          bottom: 0px;
+                      }
+                      /* footer gauche (force l'alignement au bas et les couleurs, width) */
+                      
+                      .divfootg {
+                          display: flex;
+                          align-items: flex-end;
+                          background-color: black;
+                          color: white;
+                          width: 75%;
+                          color: white;
+                          padding-top: 1em;
+                          list-style-type: none;
+                      }
+                      /* Disposition du texte dans le footer gauche */
+                      
+                      .footb {
+                          list-style-type: none;
+                          color: rgb(110, 110, 110);
+                          margin-left: -1em;
+                      }
+                      /* Change la hauteur du lien vers le plan du site */
+                      
+                      .hauteurindex {
+                          margin-bottom: 8%;
+                      }
+                      /* Change la couleur du lien vers le plan du site */
+                      
+                      .planfoot {
+                          color: white;
+                          text-decoration: underline;
+                      }
+                      /* footer droit (en colonne vers le bas) */
+                      
+                      .divfootd {
+                          width: 25%;
+                          display: flex;
+                          flex-flow: column nowrap;
+                          justify-content: flex-end;
+                          background-color: black;
+                          color: white;
+                      }
+                      /* titre des media (contactez moi!) justifier au centre */
+                      
+                      .mediah1 {
+                          display: flex;
+                          justify-content: center;
+                          margin-bottom: 6%;
+                      }
+                      /* division entre les images des medias du footer (space-around) */
+                      
+                      .mediaimg {
+                          display: flex;
+                          justify-content: space-around;
+                          margin-bottom: 2%;
+                      }
+                      /* ===========================Responsivite=============================== */
+                      
+                      @media screen and (max-width: 800px) {
+                          /* header  800px */
+                          header h1 {
+                              width: 20.3%;
+                          }
+                          /* nav bar  800px */
+                          nav {
+                              overflow: hidden;
+                              position: relative;
+                          }
+                          /* Change la rangée en colonne pour les petit appareils */
+                          .ul1 {
+                              display: flex;
+                              flex-flow: column wrap;
+                              align-items: center;
+                          }
+                          /* marge a gauche */
+                          .titrealexinfo {
+                              margin-left: 1em;
+                          }
+                          /* alignement au milieu */
+                          .titrealexinfo {
+                              display: flex;
+                              align-items: center;
+                          }
+                          /* footer  800px */
+                          /* Change la rangée en colonne pour les petit appareils */
+                          footer {
+                              display: flex;
+                              flex-direction: column;
+                          }
+                          /* ordre footer 2*/
+                          .divfootg {
+                              order: 2;
+                              width: 100%;
+                          }
+                          /* ordre footer 1*/
+                          .divfootd {
+                              order: 1;
+                              width: 100%;
+                          }
+                          /* empeche de faire un espace blanc */
+                          .mediah1 {
+                              white-space: nowrap;
+                          }
+                      }

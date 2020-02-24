@@ -1,0 +1,46 @@
+/* Main qui divise les oobjet en space-between */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 2%;
+    margin: auto;
+    height: fit-content;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+
+/* Force la longeur du contenu a 100% */
+
+.sectionplan {
+    width: 100%;
+}
+
+
+/* Disposition de la liste en rangée space-around*/
+
+.ulliens {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+    list-style: none;
+    margin-top: 5%;
+}
+
+
+/* ===========================Responsivite=============================== */
+
+@media screen and (max-width: 800px) {
+    /* Empeche l'overflow du footer  */
+    main {
+        margin-bottom: 45%;
+    }
+    /* Empeche l'overflow de l'image */
+    .ulliens {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}

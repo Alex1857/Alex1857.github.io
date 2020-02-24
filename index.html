@@ -1,0 +1,125 @@
+﻿<!doctype html>
+
+<html lang="fr" />
+
+<!-- Déclaration du contenu et des références -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content=" Site web sur les composantes informatiques" />
+    <meta name="author" content="Alex Cloutier" />
+    <meta name="keywords" content="HTML, meta tag, tag reference" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.86" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>AlexInfo</title>
+</head>
+
+<!-- Contenu du body -->
+
+<body>
+    <nav>
+        <!-- Liste d'items du menu -->
+
+        <ul class="ul1">
+            <li class="titrealexinfo">
+                <a href=index.html>
+                    <b>AlexInfo.ca</b>
+                </a>
+            </li>
+            <li> <a href="pages/nvidia.html">Nvidia</a> </li>
+            <li> <a href="pages/amd.html">Amd</a> </li>
+            <li> <a href="pages/intel.html">Intel</a> </li>
+            <li> <a href="pages/Infos.html">Infos</a> </li>
+            <li> <a href="pages/apropos.html">À propos</a> </li>
+            <li> <a href="pages/plan.html">Plan</a> </li>
+            <li> <a href="pages/Liens.html">Liens</a> </li>
+            <li> <a href="pages/FAQ.html">FAQ</a> </li>
+        </ul>
+
+        <!-- bar de decoration sous la nav -->
+
+        <div class="underbar"></div>
+
+    </nav>
+
+    <!-- Contenu du main -->
+
+    <main>
+
+        <!-- section 1 du main -->
+
+        <section class="section1">
+            <!-- Partie text et audio -->
+            <div class="titreaudio">
+                <!-- sous division pour texte -->
+                <div class="titrestack">
+                    <h2>Bienvenue sur mon site alexinfo.ca</h2>
+                    <p>Venez vous informer sur plusieurs sujets technologiques, de plus en plus de contenu sera ajouté dans le futur.</p>
+                </div>
+                <!-- audio -->
+                <audio controls>
+                    <source src="audio/projet.mp3">
+                    <source src="audio/son.ogg">
+                    <p>Your browser does not support audio tag</p>
+                </audio>
+                <!-- vidéo -->
+            </div>
+            <iframe width="560" height="300" src="https://www.youtube.com/embed/88uituTSAN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <!-- Section2 avec 3 images -->
+
+        <section class="section2">
+            <!-- stack 2 images a gauche -->
+            <div class="imgstack">
+                <img class="image1" alt="GTX sketch" src="images/960sketch.jpg"></img>
+                <img class="image2" alt="GTX 1080 boite" src="images/gtx 1080.jpg"></img>
+            </div>
+            <!-- image seule a droite -->
+            <img class="image3" alt="rackmount" src="images/rackmountgpu.jpg"></img>
+        </section>
+    </main>
+
+    <!-- Division du footer ( en deux parties) -->
+
+    <footer>
+
+        <!--------divison du footer gauche---------->
+
+        <section class="divfootg">
+            <!-- Liste du footer guache -->
+            <ul class="footb">
+                <!-- division pour lien plan -->
+                <div class="hauteurindex">
+                    <li> <a class="planfoot" href="pages/plan.html">Plan du site</a></li>
+                </div>
+                <!-- texte footer gauche -->
+                <li class="copy ">© Alex Cloutier</li>
+                <li class="browsers "> Compatible avec Chrome, Edge et FireFox</li>
+            </ul>
+        </section>
+
+        <!--------divison du footer droit---------->
+
+        <section class="divfootd">
+            <!-- titre contactez-moi! -->
+            <div class="mediatxt">
+                <h1 class="mediah1"> Contactez-moi !</h1>
+            </div>
+            <!-- Images médias hyperliens -->
+            <div class="mediaimg">
+                <a href="mailto:alex-cloutier14@hotmail.com"> <img src="images/mail.png" alt="email" title="Me joindre sur email"> </img>
+                </a>
+                <a href="https://www.facebook.com/alex.cloutier.58958"> <img src="images/fb.png" alt="facebook" title="Me joindre sur Facebook"> </img>
+                </a>
+                <a href="https://www.linkedin.com/in/alex-cloutier-b8778217a/" class="linked"> <img src="images/li.png" alt="Linkedin" title="Me joindre sur Linked in"> </img>
+                </a>
+                <a href="https://twitter.com/CloutierAlex2"> <img src="images/twitter.png" alt="twitter" title="Me joindre sur twitter"> </img>
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

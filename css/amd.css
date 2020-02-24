@@ -1,0 +1,55 @@
+ /* Main alligner au mileu */
+ 
+ main {
+     width: 60%;
+     padding: 2%;
+     margin: auto;
+     height: fit-content;
+     margin-top: 5%;
+     margin-bottom: 10%;
+ }
+ /* Met le wrap en colonne */
+ 
+ .amdwrap1 {
+     display: flex;
+     flex-flow: column nowrap;
+ }
+ /* Ajuste l'allignement du contenu des sections */
+ 
+ .amdwrap1 section {
+     display: flex;
+     flex-flow: row;
+     justify-content: space-around;
+     align-items: center;
+     margin-bottom: 3%;
+     height: 300px;
+     white-space: nowrap;
+     border-color: black;
+     border-style: solid;
+ }
+ /* Force les listes en colonne et sans style */
+ 
+ .amdwrap1 ul {
+     display: flex;
+     flex-flow: column;
+     list-style: none;
+ }
+ /* Empeche les images de deborder de leur division */
+ 
+ .amdwrap1 a img {
+     max-width: 100%;
+     object-fit: cover;
+ }
+ /* ===========================Responsivite=============================== */
+ 
+ @media screen and (max-width: 800px) {
+     /* Met un marge sous le contenu pour empecher l'overflow du footer */
+     main {
+         margin-bottom: 45%;
+     }
+     /* Empeche les images de deborder de leur division */
+     .amdwrap1 a img {
+         max-width: 100%;
+         object-fit: cover;
+     }
+ }

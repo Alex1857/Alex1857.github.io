@@ -1,0 +1,35 @@
+ /* Disposition du Main en colonne et space-between*/
+ 
+ main {
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: space-between;
+     width: 60%;
+     padding: 2%;
+     margin: auto;
+     height: fit-content;
+     margin-top: 5%;
+     margin-bottom: 10%;
+ }
+ /*Disposition de l'image pour la centrer*/
+ 
+ .section3 {
+     padding-top: 2%;
+     display: flex;
+     justify-content: center;
+     max-width: 100%;
+     object-fit: cover;
+ }
+ /* ===========================Responsivite=============================== */
+ 
+ @media screen and (max-width: 800px) {
+     /* Empeche l'overflow du footer  */
+     main {
+         margin-bottom: 45%;
+     }
+     /* empeche l'image de deborder de la section */
+     .section3 img {
+         max-width: 100%;
+         object-fit: cover;
+     }
+ }

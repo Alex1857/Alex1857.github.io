@@ -1,0 +1,68 @@
+ /* Main center au milieu */
+ 
+ main {
+     width: 60%;
+     padding: 2%;
+     margin: auto;
+     height: fit-content;
+     margin-top: 5%;
+ }
+ /* Disposition du contenu du wrap en rangéé et space-between*/
+ 
+ .intelwrap1 {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: flex-start;
+     border-color: black;
+     border-style: solid;
+     padding: 2%;
+     margin-bottom: 40%;
+ }
+ /* force le titre a ce positionner en haut a gauche avec une police de 1.5em */
+ 
+ .titleintel {
+     font-size: 1.5em;
+     margin: 0;
+     padding: 0;
+ }
+ /* Divise le conteneur du wrap en deux largeurs */
+ 
+ .intelproto {
+     width: 40%;
+     margin-right: 4%;
+ }
+ /* Empeche L'image de deborder et aussi ombrage  */
+ 
+ .imageintel {
+     max-width: 100%;
+     object-fit: cover;
+     box-shadow: 10px 15px 20px #aaa;
+ }
+ /* Applique une marge a droite a l'image pour quelle ne touche pas le bord du wrap */
+ 
+ .secimage {
+     width: fit-content;
+     margin-right: 1%;
+ }
+ /* Change la grosseur du texte et sa couleur (text sous l'image) */
+ 
+ .secimage p {
+     color: #aaa;
+     font-size: 80%;
+ }
+ /* ===========================Responsivite=============================== */
+ 
+ @media screen and (max-width: 800px) {
+     /* Empeche l'overflow du footer */
+     main {
+         margin-bottom: 45%;
+     }
+     /* Repositionne le wrap pour les appareils plus petits  */
+     .intelwrap1 {
+         display: flex;
+         flex-flow: column nowrap;
+         align-items: center;
+         justify-content: center;
+     }
+ }

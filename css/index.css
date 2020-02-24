@@ -1,0 +1,126 @@
+/* Main (placer en colonne avec des marges auto pour etre disposer au milieu */
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 60%;
+    margin: auto;
+    height: fit-content;
+    margin-top: 8%;
+    margin-bottom: 20%;
+}
+
+
+/* Force le inline entre les items de la section1 */
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* disposition du titre et de l'objet audio (en colonne avec une hauteur de 50% et empeche de dépasser avec cover) */
+
+.titreaudio {
+    margin-top: -3%;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    padding-right: 5%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+/* Permet de pousser l'objet audio en bas du conteneur (alligner avec la video) */
+
+.titrestack {
+    flex-grow: 1;
+}
+
+
+/* Disposition de la section2 (en rangéée space-between) */
+
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12%;
+}
+
+
+/* Ombre de l'image */
+
+.section2 img {
+    box-shadow: 10px 15px 20px #aaa;
+}
+
+
+/* Stack pour les deux images de gauche */
+
+.imgstack {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+
+/* Empeche les images de déborder */
+
+.image1,
+.image2 {
+    max-width: 80%;
+    object-fit: cover;
+}
+
+.image3 {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+/* ===========================page resizing=============================== */
+
+@media screen and (max-width: 800px) {
+    /* main  800px empecher aussi l'overflow du footer */
+    main {
+        display: flex;
+        flex-flow: column wrap;
+        margin: auto;
+        height: inherit;
+        padding-top: 8%;
+        margin-bottom: 40%;
+    }
+    /* Empeche l'objet audio d'overflow */
+    .titreaudio audio {
+        margin-bottom: 8%;
+    }
+    .section1 iframe {
+        max-width: 100%;
+        object-fit: cover;
+    }
+    /* Change la rangée en colonne pour les petit appareils */
+    .section1 {
+        margin: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 10%;
+    }
+    /* Change la rangée en colonne pour les petit appareils */
+    .section2 {
+        margin: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    /* Empeche l'objet image d'overflow */
+    .section2 img {
+        max-width: 100%;
+        object-fit: cover;
+        margin-bottom: 5%;
+    }
+}
+
+
+}
+
+}

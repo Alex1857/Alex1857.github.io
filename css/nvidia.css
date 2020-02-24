@@ -1,0 +1,71 @@
+ /* Main centrer */
+ 
+ main {
+     width: 60%;
+     padding: 2%;
+     margin: auto;
+     height: fit-content;
+     margin-top: 5%;
+     margin-bottom: 10%;
+ }
+ /* Disposition du contenu du wrap en colonne */
+ 
+ .nvidiawrap1 {
+     display: flex;
+     flex-flow: column nowrap;
+ }
+ /* Disposition du contenu des sections */
+ 
+ .nvidiawrap1 section {
+     display: flex;
+     flex-flow: row;
+     justify-content: space-around;
+     align-items: center;
+     margin-bottom: 3%;
+     height: 300px;
+     white-space: nowrap;
+     border-color: black;
+     border-style: solid;
+ }
+ /* Disposition du contenu des listes en colonne */
+ 
+ .nvidiawrap1 ul {
+     display: flex;
+     flex-flow: column;
+     list-style: none;
+ }
+ /* Empeche l'image de deborder  */
+ 
+ .nvidiawrap1 img {
+     padding: 2%;
+     max-width: 100%;
+     object-fit: cover;
+ }
+ /* (Section super) */
+ /* Met les deux images de la section super en colonne */
+ 
+ .stackseries {
+     display: flex;
+     flex-flow: column nowrap;
+ }
+ /* Force les marges pour la section super */
+ 
+ .marginsuper {
+     display: flex;
+     justify-content: center;
+     font-weight: bold;
+ }
+ /* ===========================Responsivite=============================== */
+ 
+ @media screen and (max-width: 800px) {
+     /* Empeche l'overflow du footer  */
+     main {
+         margin-bottom: 45%;
+     }
+     /* Empeche l'overflow de l'image */
+     .nvidiawrap1 img {
+         padding: 2%;
+         max-width: 100%;
+         object-fit: cover;
+     }
+ }

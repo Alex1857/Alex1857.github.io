@@ -1,0 +1,40 @@
+ /* Disposition du Main en colonne et space-between*/
+ 
+ main {
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: space-between;
+     width: 60%;
+     padding: 2%;
+     margin: auto;
+     height: fit-content;
+     margin-top: 5%;
+     margin-bottom: 10%;
+ }
+ /* Disposition du conteneur de l'image centrer et empeche de deborder */
+ 
+ .sectionrx580 {
+     padding-top: 4%;
+     display: flex;
+     justify-content: center;
+     max-width: 100%;
+     object-fit: cover;
+ }
+ /* Ombre de l'image */
+ 
+ .sectionrx580 img {
+     box-shadow: 10px 15px 20px #aaa;
+ }
+ /* ===========================Responsivite=============================== */
+ 
+ @media screen and (max-width: 800px) {
+     /* Empeche l'overflow du footer */
+     main {
+         margin-bottom: 45%;
+     }
+     /* Empeche l'overflow de l'image */
+     .sectionrx580 img {
+         max-width: 100%;
+         object-fit: cover;
+     }
+ }
